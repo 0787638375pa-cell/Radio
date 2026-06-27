@@ -1,7 +1,16 @@
 <html>
 <body>
-<audio controls autoplay>
-<source src="https://play.thestreamtech.com:7217/stream" type="audio/mpeg">
-</audio>
+
+<button onclick="playRadio()">PLAY RADIO</button>
+
+<script>
+let audio;
+
+function playRadio(){
+  audio = new Audio("https://play.thestreamtech.com:7217/stream");
+  audio.play();
+}
+</script>
+
 </body>
 </html>
